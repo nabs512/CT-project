@@ -55,9 +55,9 @@ module "autoscaling" {
   launch_configuration_name = module.ec2.launch_configuration.name
 
   #Autoscaling configuration parameters
-  min_size               = 1
-  max_size               = 2
-  desired_capacity       = 1
+  min_size               = 2
+  max_size               = 3
+  desired_capacity       = 2
 }
 
 # Security Group for Web Server (defined outside for ELB access)
